@@ -1,0 +1,266 @@
+html {
+    max-width: 100vw;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    position: static;
+    font-family: 'Tomorrow', sans-serif;
+    font-size: 25px;
+    margin: 15px;
+    padding: 0;
+    line-height: 1.5;
+    background-color: black;
+    color:white;
+
+}
+
+main {
+    display: block;
+    text-align: center;
+    margin: 15px;
+    position: relative; 
+}
+
+a {
+    color: rebeccapurple;
+    text-decoration: none;
+    padding: 5px;
+}
+
+a:hover {
+    text-decoration: underline;
+    background-color: orangered;
+    border-radius: 5px;
+}
+
+b {
+    color: maroon;
+}
+
+i {
+    color: lightcoral;
+}
+
+p {
+    text-align: center;
+    margin: 15px;
+}
+
+h3 {
+    color: #8a2b2f;
+}
+
+footer img {
+    text-align: center;
+    display: inline-block;
+    width: 100px;
+}
+
+footer a:hover {
+    background-color: black;
+}
+
+input[type=text] {
+    width: 80%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+
+input[type=textarea] {
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+textarea {
+    width: 80%;
+    height: 100px;
+    padding: 14px 20px;
+    resize: none;
+}
+
+input[type=submit] {
+    width: 25%;
+    background-color: white;
+    color: black;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: default;
+  }
+
+input[type=submit]:hover {
+    background-color: gray;
+}
+
+img {
+    background-color: black;
+}
+
+
+
+.intake {
+    display: block;
+    text-align: center;
+    margin: 15px;
+    position: relative;
+
+}
+
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+  }
+  
+  .col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+  }
+  
+  /* clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+.icon {
+    height: 200px;
+    width: relative;
+    margin: auto;
+    border-radius: 75px;
+}
+
+.refcontainer {
+    display: block;
+    width: 100%;
+    overflow: hidden;
+}
+
+.refcontainer p {
+    font-size: 20px;
+}
+
+
+.rcol-25-left, .rcol-25-right {
+    width: 25%;
+    padding: 15px;
+    margin-top: 100px;
+    clear: both;
+}
+
+.rcol-25-left {
+    float: left;
+  }
+
+.rcol-25-right {
+    float: right;
+  }
+
+.rnames {
+    font-size: 25px;
+    text-decoration: underline white;
+}
+  
+.rcol-75-left, .rcol-75-right {
+    width: 75%;
+    padding: 15px;
+    border: 2px white dotted;
+    margin-top: 5%;
+    margin-bottom: 100px;
+}
+
+.rcol-75-right {
+    float: right;
+  }
+
+.rcol-75-left {
+    float: left;
+}
+
+.side-menu {
+    background-color: black;
+    display: none;
+    padding: 10px;
+    margin: 10px;
+    border: 1px;
+    border-color: white;
+    border-style: dashed;
+    border-radius: 9px;
+    color: white;
+    font-family: 'Tillana', cursive;
+    box-sizing: border-box;
+    width: 15%;
+
+}
+
+/* side menu links */
+.side-menu a {
+    display: inline-block;
+    color: rebeccapurple;
+    padding: 8px;
+    font-size: 26px;
+    border-radius: 6px;
+}
+
+.side-menu a:hover {
+    background-color: grey;
+    color: black;
+    -webkit-transition: background-color 0.6s ease-out, color 0.6s ease-out;
+    -moz-transition: background-color 0.6s ease-out, color 0.6s ease-out;
+    -o-transition: background-color 0.6s ease-out, color 0.6s ease-out;
+    transition: background-color 0.6s ease-out, color 0.6s ease-out;
+}
+
+/* side menu heading */
+.side-menu h3 {
+    padding: 8px;
+    text-decoration: underline;
+}
+
+
+/* hamburger button */
+#ham-button {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+/* This will change the intake form to stack on small screens */
+@media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+    footer a {display: block;} /* make the link icons stack */
+    main img {width: 50%;} /* make the selfie scale to size */
+}
+
+/* This will make the side menu stretch to viewport width on small screens */
+@media only screen and (max-width: 700px){
+    #side-menu {display: none; width: 100%;}
+    #ham-button {display: block; }
+}
+
+@media only screen and (max-width:950px){
+    .rcol-25-left, .rcol-25-right, .rcol-75-right {float: none;}
+}
