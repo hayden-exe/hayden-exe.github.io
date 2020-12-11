@@ -19,4 +19,9 @@ Normal endings (such as leaving) should have the option to restart entirely.
 
 It's a narrative story so it's text-heavy. I tried to keep it within manageable chunks, but it's still got a few options if you want to read all of them.
 
+Please use Github pages to view the project, or feel free to download the files and run it on your computer. 
+(the img source file for the ham icon may be off if the project is downloaded, since I had to add "." to the img src for it to work on Pages.)
+
+Just type "hayden-exe.github.io" to test it!
+
 Enjoy!
